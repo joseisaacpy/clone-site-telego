@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone TelegoNet</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- link font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5432a0e64c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- imagem / logo -->
+      <img src="./img/logo-telego.png" alt="Logo da TelegoNet" />
+      <!-- titulo central de atendimento -->
+      <h2>Central de Atendimento</h2>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container-text">
+        <!-- titulo -->
+        <h1>A internet que você precisa</h1>
+        <!-- texto -->
+        <label for="inputCidade">Escolha a sua cidade</label>
+        <!-- select com opcoes de cidades -->
+        <select name="cidade" id="inputCidade">
+          <option value="cidade1" disabled selected>
+            Selecione sua cidade
+          </option>
+          <option value="cidade1">José de Freitas</option>
+          <option value="cidade2">Barras</option>
+          <option value="cidade3">Lagoa Alegre</option>
+          <option value="cidade4">Cabeceiras</option>
+        </select>
+      </div>
+      <div class="container-img">
+        <!-- imagem do mascote -->
+        <img src="./img/mascote-telego.png" alt="" srcset="" />
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <!-- icone do whatsapp que sera fixo -->
+      <i class="fa-brands fa-whatsapp" id="icone-zap"></i>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

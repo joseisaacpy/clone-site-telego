@@ -1,0 +1,161 @@
+/* animation */
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* fonte robot */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* variaveis */
+:root {
+  --branco-principal: #ffffff;
+  --fonte-principal: "Roboto", sans-serif;
+  --laranja-principal: #ff7e13;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-principal);
+  box-sizing: border-box;
+}
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  font-size: 1rem;
+  background: var(--laranja-principal);
+  color: var(--branco-principal);
+}
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+/* imagem header */
+header img {
+  cursor: pointer;
+  width: 18%;
+}
+
+/* titulo header */
+header h2 {
+  cursor: pointer;
+  font-size: 1rem;
+  border: 2px solid var(--branco-principal);
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+/* main */
+main {
+  /* width: 100%; */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%; /* nao fica encostando lateral */
+  margin: 0 auto;
+  /* flex-direction: column; */
+}
+
+/* container de textos */
+main .container-text {
+  /* border: 2px solid #000; */
+
+  flex: 1 1 50%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* titulo do container */
+main .container-text h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 900;
+  animation: pulsar 3s infinite ease-in-out;
+}
+
+/* label */
+main .container-text label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* select */
+main .container-text select {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 100%;
+  /* font-weight: bold; */
+}
+
+/* container de img */
+.container-img {
+  flex: 1 1 50%;
+}
+/* imagem */
+.container-img img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+/* icone do whatsapp */
+footer i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* media queries */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  main .container-text h1 {
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 45%;
+  }
+}
